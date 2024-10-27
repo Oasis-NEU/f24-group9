@@ -30,7 +30,7 @@ final class ViewModel: ObservableObject {
     @Published var password = ""
     
     let supabase = SupabaseClient(supabaseURL: Secrets.projectURL, supabaseKey: Secrets.apiKey)
-    
+
     // MARK: - Database
     
     func createFeatureRequest(text: String) async throws {
@@ -43,16 +43,16 @@ final class ViewModel: ObservableObject {
                 .select()
                 .execute()
                 .value
-            
             DispatchQueue.main.async {
                 self.tasks = manyTasks
             }
         } catch {
-            print("error getting task data")
+            print("error getting task data: \(error).")
         }
     }
     
     func update(_ feature: Tasks, with text: String) async {
+        
     }
     
     func deleteFeature(at id: Int) async throws {

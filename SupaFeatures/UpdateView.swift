@@ -39,8 +39,8 @@ struct UpdateView: View {
     }
 }
 
-struct UpdateView_Previews: PreviewProvider {
-    static var previews: some View {
-        UpdateView(viewModel: ViewModel(), task: Tasks(taskName: "example", createdAt: Date(), dueDate: Date(), completed: false, userID: "tdk737@gmail.com"))
-    }
-}
+//struct UpdateView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UpdateView(viewModel: ViewModel(), task: Tasks(taskName: "example", createdAt: Date(), dueDate: Date(), completed: false, userID: "tdk737@gmail.com"))
+//    }
+//}
