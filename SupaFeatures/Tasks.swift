@@ -10,8 +10,8 @@ import Foundation
 struct Tasks: Codable, Identifiable, Hashable {
     var id: Int?
     var taskName: String
-    var createdAt: Date
-    var dueDate: Date
+    var createdAt: String
+    var dueDate: String
     var completed: Bool
     var userID: String
     

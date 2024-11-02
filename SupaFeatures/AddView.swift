@@ -17,7 +17,7 @@ struct AddView: View {
     
     var body: some View {
         Form {
-            TextField("Feature Description", text: $text)
+            TextField("Table Description", text: $text)
         }
         .toolbar {
             ToolbarItem {
